@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: auto;
+    text-align: center;
+}
+#cabecera{
+    background-color: aquamarine;    
+}
+h1{ 
+    font: bold 1.5em arial; 
+    padding: 0.5em; 
+}
+#navegador{
+    background-color:cadetblue;
+    padding: 0.5em;
+}
+#navegador li {
+    margin: 0px 5px;
+    padding: 0.1em 1em 0.5em 1em;
+    background-color: rgb(150, 201, 224);
+    width: 15%;
+    float: left;
+    list-style-type: none;
+    position: relative;
+}
+#subseccion1, #subseccion2, #subseccion3, #subseccion3 {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: rgb(150, 201, 224);
+    font: normal 0.8em arial;
+    padding: 0.2em 0.5em;
+    display: none;
+}
+#navegador li:hover{
+    background-color: rgb(60, 142, 209);
+}
+#navegador li a:link, #navegador li a:visited{
+    color:rgb(6, 62, 230);
+    text-decoration: none;
+}
+#navegador li a:hover, #navegador li a:active{
+    color: azure;
+    text-decoration: none;
+}
+.borrador{
+    clear: both;
+}
+#Cueprincipal h2{
+    font: bold 1.5em arial;
+    padding: 0.5em;
+}
+#Cueprincipal p{
+    font: normal 0.9em arial;
+    text-align: justify;
+    text-indent: 3em;
+    padding: 0.5em 2em;
+}

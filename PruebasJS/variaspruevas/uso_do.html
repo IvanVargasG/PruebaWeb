@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="css/micss2.css">
+    <style>
+        #contenid{
+            width: 25%;
+            background-color: rgb(169, 214, 214);
+            padding: 15px;
+            margin: auto;
+        }
+    </style>
+     <script>
+         /*var dias=["lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+         var cont=0;
+            while(cont<dias.length){
+                document.write(dias[cont] + "<br/>");
+                cont++;
+            }*/
+         /*var nombre, edad, localidad;
+         var nombre =prompt("Digite el nombre", "Digite Nombre");
+            while(!isNaN(nombre)){
+                nombre=prompt("Digite un nombre valido", "Digite un nombre valido");
+            }
+         var edad=prompt("Digite la edad", "Digite Edad");
+            while(edad<=0 || edad >105 || isNaN(edad)){
+                edad=prompt("Digite una edad validad", "Digite una edad validad");
+            }         
+         var localidad=prompt("Digite la localidad", "Digite Localidad");
+            while(!isNaN(localidad)){
+                localidad=prompt("Digite una localidad validad", "Digite una localidad validad");
+            }*/
+
+        /*var numaleatorio, minumero, intento;
+        numaleatorio=Math.round(Math.random()*100);        
+        intento=0;
+            do{
+                minumero=prompt("Digite un número entre 1 y 100");
+                    if(numaleatorio>minumero){
+                        alert("El número es mayor");
+                    }
+                        if(numaleatorio<minumero){
+                            alert("El número es menor");
+                        }
+            }while(numaleatorio!=minumero){
+                alert("El Número es correcto");
+            }*/
+    
+    /*var num1=prompt("Digite el primer número");
+    var num2=prompt("Digite el segundo número");
+    var operacion=prompt("Digite la operación a realizar").toLowerCase();
+            
+        if(operacion!="suma" && operacion!="resta" && operacion!="multiplicacion" && operacion!="multiplicación" && operacion!="division" && operacion!="división"){
+            alert("la operación no esta contemplada. Tan solo Suma/Resta/Multiplicación/División.");
+        }if(operacion=="suma"){
+            alert(parseInt(num1)+ parseInt(num2));
+        }if(operacion=="resta"){
+            alert(parseInt(num1)- parseInt(num2));
+        }if(operacion=="multiplicacion" || operacion=="multiplicación"){
+            alert(parseInt(num1)* parseInt(num2));
+        }if(operacion=="division" || operacion=="división"){
+            alert(parseInt(num1)/ parseInt(num2));
+        }*/
+        
+
+
+        var aleatorio=Math.round(Math.random()*100);
+        var minum, intentos;
+        var minum=0;
+        var intentos=0;
+
+        /*do{
+            minum=prompt("Digite un número entre 1 y 100");
+            if(aleatorio>minum){
+                alert("El número es mayor");
+            }if(aleatorio<minum){
+                alert("El número es menor");
+            }
+            intentos++;
+        }while(aleatorio!=minum){
+            alert("El número es correcto, realizaste " + intentos + " intentos");
+        }*/
+
+        
+var nombre, apellido, edad, departamento, ciudad;
+
+    do{
+            nombre=prompt("Digite un nombre", "Digita un nombre");
+        }while(!isNaN(nombre));
+
+    do{
+            apellido=prompt("Digite un apellido", "Digita un apellido");
+        }while(!isNaN(apellido));
+
+    do{
+        edad=prompt("Digite una edad", "Digita una edad");
+    }while(edad<=0 || edad>105 || isNaN(edad));
+
+    do{
+        departamento=prompt("Digite un departamento", "Digita un departamento");
+    }while(!isNaN(departamento));
+
+    do{
+        ciudad=prompt("Digite una ciudad", "Digita una ciudad");
+    }while(!isNaN(ciudad));
+
+     </script>
+
+</head>
+<body>
+
+
+
+        <div class="contenedor">
+                <div class="header">
+                    <p class="logo">Curso JavaScript Píldoras Informáticas</p>
+                </div>
+                    <div class="contenido">
+                        <div class="principal">
+                    <h1>Aprendiendo condicionales for</h1>                  
+                        </div>
+                </div>            
+        </div>
+
+        <div id="contenid">
+            <p>Nombre:
+                <script>document.write(nombre)</script>
+            </p>
+            <p>Apellido:
+                <script>document.write(apellido)</script>
+            </p>
+            <p>Edad:
+                <script>document.write(edad)</script>
+            </p>
+            <p>Departamento:
+                <script>document.write(departamento)</script>
+            </p>
+            <p>Ciudad:
+                <script>document.write(ciudad)</script>
+            </p>
+        </div>
+</body>
+</html>

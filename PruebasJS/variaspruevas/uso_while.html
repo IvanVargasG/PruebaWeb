@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="css/micss2.css"> 
+     <style>
+         #contenidowhile{
+	width: 25%;
+	background-color: rgb(82, 158, 172);
+	margin: auto;
+	padding: 15px;
+}
+     </style> 
+    <script>
+
+            /*Mostrar los datos que estan dentro del ciclo while
+            var meses=["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
+                        "Noviembre", "Diciembre"];
+            var contador=0;
+            
+                while(contador<meses.length){
+                    document.write(meses[contador] + "<br/>" );
+                    contador++;
+                }*/
+        
+        var nombre, apellido, edad, departamento, ciudad;
+
+        var nombre=prompt("Digite su nombre, por favor.", "Digita el nombre");
+            while(!isNaN(nombre)){
+                nombre=prompt("Digite un nombre valido", "Digita un nombre valido");
+            }
+        var apellido=prompt("Digite su apellido, por favor.", "Digita el apellido");
+            while(!isNaN(apellido)){
+                apellido=prompt("Digite un apellido valido", "Digita un apellido valido");
+            }
+        var edad=prompt("Digite su edad, por favor.", "Digita la edad");
+            while(edad<=0 || edad>105 || isNaN(edad)){
+                edad=prompt("Digite una edad validad", "Digita una edad valida");
+            }
+        var departamento=prompt("Digite el departamento, por favor.", "Digita el departamento");
+            while(!isNaN(departamento)){
+                departamento=prompt("Digite un departamento valido", "Digita un departamento valido");
+            }
+        var ciudad=prompt("Digite la ciudad, por favor.", "Digita la ciudad");
+            while(!isNaN(ciudad)){
+                ciudad=prompt("Digite una ciudad validad", "Digita una ciudad valida");
+            }
+            
+        </script>
+
+</head>
+<body>
+
+    
+        <div class="contenedor">
+                <div class="header">
+                    <p class="logo">Curso JavaScript Píldoras Informáticas</p>
+                </div>
+                    <div class="contenido">
+                        <div class="principal">
+                    <h1>Aprendiendo condicionales while</h1>                  
+                        </div>
+                </div>            
+        </div>
+
+
+    <div id="contenidowhile">
+        <p>Nombre:
+                <script>document.write(nombre)</script>
+        </p>            
+        <p>Apellido:
+            <script>document.write(apellido)</script>
+        </p>
+        <p>Edad:
+            <script>document.write(edad)</script>
+        </p>
+        <p>Departamento:
+            <script>document.write(departamento)</script>
+        </p>
+        <p>Ciudad:
+            <script>document.write(ciudad)</script>
+        </p>
+    </div>
+    
+</body>
+</html>

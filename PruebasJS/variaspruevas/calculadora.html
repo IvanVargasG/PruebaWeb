@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/micss2.css">
+</head>
+<body>
+
+    <script>
+    
+        var num1=prompt("Digite el primer número");
+        var num2=prompt("Digite el segúndo número");
+        var operacion=prompt("Digite la operación a realizar. Suma/Resta/Multriplicación/División").toLowerCase();
+
+    if(!isNaN(num1) && !isNaN(num2)){
+        if(operacion!="suma" && operacion!="resta" && operacion!="multiplicacion" && operacion!="multiplicación" && operacion!="division" && operacion!="división"){
+           alert("La operación no esta contemplada. Solo Suma/Resta/Multiplicación/División");
+        }else if(operacion=="suma"){
+            alert(parseInt(num1)+ parseInt(num2));
+        }else if(operacion=="resta"){
+            alert(parseInt(num1) - parseInt(num2));                
+        }else if(operacion=="multiplicación" || operacion=="multiplicacion"){
+            alert(parseInt(num1) * parseInt(num2));
+        }else if(operacion=="división" || operacion=="division"){
+                        alert(parseInt(num1) / parseInt(num2));
+        }
+    }else{
+        if(typeof(num1)=="string" || typeof(num2)=="string"){
+            alert("Se deben digitar solo números, con texto no es posible realizar las operaciones")
+        }else{
+            alert("Ha ocurrido un error no identificado!");
+        }
+        
+    }        
+    </script>
+    
+
+
+    <div class="contenedor">
+            <div class="header">
+                <p class="logo">Curso JavaScript Píldoras Informáticas</p>
+            </div>
+                <div class="contenido">
+                    <div class="principal">
+                <h1>Aprendiendo condicionales if</h1>                  
+                    </div>
+            </div>            
+    </div>
+</body>
+</html>

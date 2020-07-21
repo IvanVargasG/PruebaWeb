@@ -1,0 +1,118 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.2em;
+    margin: 0;
+    background-color: rgb(240, 240, 240);
+}
+
+p{
+    margin-bottom: 1.4em;
+}
+
+.container{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #333;
+    color: rgb(253, 209, 209);
+    padding: 1.5rem 0 ;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+h1{
+    font-size: 2rem;
+    line-height: 1.3;
+    color: rgb(70, 70, 245);  
+}
+
+p{
+    padding-left: 2rem;    
+}
+
+.header a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    letter-spacing: 5px;
+    font-size: 1.4em;    
+}
+
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li{
+    display: inline-block;
+}
+
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover{
+    background: rgb(71, 67, 67);
+}
+
+.main{
+    padding-top: 6rem;
+}
+
+.footer{
+    background: rgb(88, 88, 88);
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 5rem;
+    color: white;
+}
+
+#informHTML, #informCSS{
+    width: 100%;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+#informHTML th, #informCSS th, #informHTML td, #informCSS td{
+    font-size: 1em;
+    padding: 5px 12px 5px 12px;
+}
+
+#informHTML tr th, #informCSS tr th{
+    text-align: center;
+    padding-top: px;
+    padding-bottom: 12px;
+    background-color: rgb(87, 117, 151);
+    color: white;
+}
+
+#informHTML tr.alterno td, #informCSS tr.alterno td{
+    background-color:rgb(211, 211, 211);
+}
+
+#informHTML tr.alterno2 td, #informCSS tr.altern2 td{
+    background-color:white;
+}

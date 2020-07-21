@@ -1,0 +1,77 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+
+<style>
+
+table{
+	margin:auto;
+}
+
+
+</style>
+
+
+</head>
+
+<body id="cuerpo">
+<form name="form1" method="post" action="" id="miformulario">
+  <table width="25%" border="1" id="mitabla">
+    <tr>
+      <td>Nombre:</td>
+      <td><label for="textfield"></label>
+      <input type="text" name="textfield" id="textfield"></td>
+    </tr>
+    <tr>
+      <td>Apellidos:</td>
+      <td><input type="text" name="textfield2" id="textfield2"></td>
+    </tr>
+    <tr>
+      <td>Edad:</td>
+      <td><input type="text" name="textfield3" id="textfield3"></td>
+    </tr>
+    <tr>
+      <td>Carnet:</td>
+      <td><input type="text" name="textfield4" id="textfield4"></td>
+    </tr>
+    <tr>
+      <td><input type="submit" name="button" id="button" value="Enviar"></td>
+      <td><input type="reset" name="button2" id="button2" value="Restablecer"></td>
+    </tr>
+  </table>
+</form>
+
+<script>
+
+  var cuerpo=document.getElementById("cuerpo");
+  var colorbody = prompt("Seleccione el color de la pagina. Azul/Verde/Rojo").toLowerCase();
+/* Metodo uno para validar los colores
+    if(colorbody=="azul"){
+      cuerpo.style.backgroundColor="blue";
+      }else if(colorbody=="verde"){
+        cuerpo.style.backgroundColor="green";
+        }else if(colorbody=="rojo"){
+          cuerpo.style.backgroundColor="red";
+    }else{
+      alert("El color no esta contemplado. Solo Azul, Verde y Rojo");
+    }*/
+
+    if(colorbody!="azul" && colorbody!="verde" && colorbody!="rojo"){
+      alert("El color no esta contemplado. Solo azul, verde y rojo");
+    }else if(colorbody=="azul"){
+      cuerpo.style.backgroundColor="blue";
+    }else if(colorbody=="verde"){
+      cuerpo.style.backgroundColor="green";
+    }else{
+      cuerpo.style.backgroundColor="red";
+    }
+
+
+</script>
+
+
+
+</body>
+</html>
